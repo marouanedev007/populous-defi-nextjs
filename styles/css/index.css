@@ -1,0 +1,229 @@
+.wallet-card {
+  background: #f4f4f7;
+  padding: 22px 24px;
+}
+
+.wallet-card.active-card {
+  opacity: 1 !important;
+}
+
+.link-card {
+  background: #f4f4f7;
+  padding: 8px;
+}
+
+.wallet-card:hover {
+  cursor: pointer;
+}
+
+.wallet-card span {
+  font-size: 18px;
+  color: #000000;
+  line-height: 35px;
+}
+
+.wallet-card img {
+  margin-left: auto;
+}
+
+.wallet-row {
+  padding: 5px 10px;
+}
+
+.wallet-row .wallet-col {
+  padding: 0 5px;
+}
+
+.wallet-dash-link {
+  font-size: 16px;
+  color: #0782ff;
+}
+
+.card-footer {
+  background-color: #ffffff !important;
+  border: none !important;
+  font-size: 16px;
+  color: #000000;
+}
+
+.card_header {
+  background-color: #ffffff !important;
+  border: none !important;
+  color: #000000;
+  padding: 40px 20px 20px 22px !important;
+}
+
+.card_header .title-welcome {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-header ul li a:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 575px) {
+  table.Protocol-table.no-border.table th {
+    width: auto !important;
+  }
+
+  table.Protocol-table.no-border.table .assets,
+  table.Protocol-table.no-border.table .market,
+  table.Protocol-table.no-border.table .deposit {
+    min-width: 120px;
+  }
+
+  table.Protocol-table.no-border.table .borrowed {
+    min-width: 140px;
+  }
+
+  table.Protocol-table.no-border.table .variable,
+  table.Protocol-table.no-border.table .stable {
+    min-width: 180px;
+  }
+
+  table.Protocol-table.no-border.table th::before {
+    right: 20px !important;
+  }
+
+  .protocol h2.p-0 {
+    font-size: 36px;
+  }
+
+  .protocol-conatiner-inner {
+    margin: 0 !important;
+  }
+
+  .protocol-conatiner-inner .date-selector {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .landing-footer .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+td a.btn.btn-light {
+  color: #0782ff;
+  font-size: 12px;
+  background: #f4f4f7;
+  line-height: 20px;
+  padding: 3px 7px;
+}
+
+td a.btn.btn-light:hover {
+  background: #0782ff;
+  color: #fff;
+}
+
+th img {
+  margin-right: 10px;
+}
+
+.border-none tr th,
+.border-none tr td {
+  border-bottom: none;
+}
+
+@media all and (min-width: 801px) {
+  .web-hide {
+    display: none !important;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .mobile-hide {
+    display: none !important;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  td a.btn.btn-light {
+    font-size: 16px;
+    background: #f4f4f7;
+    padding: 12px 15px;
+    display: inline-block;
+    width: 48%;
+  }
+  td a.btn.btn-light:hover {
+    background-color: #0782ff;
+    color: #fff;
+    border-color: #0782ff;
+  }
+
+  table tr th,
+  table tr td {
+    font-size: 16px !important;
+  }
+}
+
+.swap-cards {
+  min-height: 88px;
+}
+
+.app-radius {
+  border-radius: 3px;
+}
+
+.app-shadow {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
+}
+
+.app-primary-text-color {
+  color: #0782ff;
+}
+
+.app-primary-bg-color {
+  background-color: #0782ff;
+}
+
+.app-text-black {
+  color: #000 !important;
+}
+
+.text-sm {
+  /* convert to rems */
+  font-size: 14px;
+}
+
+.text-xl {
+  /* convert to rems */
+  font-size: 24px;
+}
+
+.wallet-card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.app-bg-gray {
+  background-color: #f4f4f7;
+}
+
+.wallet-card-grid__item {
+  height: 85px;
+}
+
+@media screen and (min-width: 768px) {
+  .wallet-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .swap-cards {
+    height: 88px;
+  }
+
+  .app-disclaimer {
+    width: 68%;
+  }
+
+  .app-policies {
+    width: calc(100%-68%);
+  }
+}

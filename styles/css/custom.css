@@ -1,0 +1,3156 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f4f4f7;
+}
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+a {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+td {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+tr:hover td {
+  background: #fafafa;
+}
+textarea:focus,
+input:focus {
+  border-color: #7a7a7a !important;
+  outline: none;
+}
+.navbar-nav.sidebar {
+  position: fixed;
+  top: 0px;
+  height: calc(100% - 1rem);
+  z-index: 99;
+  margin-top: 95px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  transition: 0.3s ease all;
+  padding: 15px 13px;
+}
+body.vertical-layout.vertical-menu.menu-expanded .main-menu {
+  width: 260px;
+  transition: 0.3s ease all;
+  backface-visibility: hidden;
+}
+html body .content {
+  padding: 0;
+  position: relative;
+  transition: 0.3s ease all;
+  backface-visibility: hidden;
+  min-height: calc(100% - 3.2rem);
+}
+.sidebar-toggled #content-wrapper {
+  margin-left: 240px;
+}
+html body #content-wrapper {
+  padding: 0;
+  position: relative;
+  transition: 0.3s ease all;
+  backface-visibility: hidden;
+  min-height: calc(100% - 3.2rem);
+  margin-left: 240px;
+  padding-top: 0;
+}
+.navbar-default {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 0px;
+}
+.sidebar-dark {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+.topbar #sidebarToggleTop:hover i {
+  color: #fff;
+}
+.sidebar-toggled .logosmall {
+  display: none;
+}
+.logoexpand {
+  display: none;
+}
+.sidebar-toggled .logoexpand {
+  display: block;
+}
+.sidebar-brand {
+  float: left;
+  width: 240px;
+  /*background: #fff !important;*/
+  transition: 0.3s ease all;
+  /* height: 64px;  */
+  height: 100%;
+  position: relative;
+  padding: 0;
+}
+.sidebar-toggled .sidebar-brand {
+  width: 13rem;
+}
+.sidebar .nav-item .nav-link span {
+  transition: all 0.3s ease;
+  color: #acacac;
+}
+.sidebar-toggled footer.sticky-footer {
+  transition: 0.3s ease all;
+  padding-left: 14rem;
+}
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+.bg-customdark,
+.sticky-footer.bg-dgery {
+  background-color: #fff !important;
+  background: #fff !important;
+}
+.sidebar-dark .sidebar-brand {
+  background: #fff;
+}
+/*.sidebar.toggled .nav-item .nav-link span {
+    display: none;
+}*/
+.sidebar.toggled .sidebar-heading {
+  display: none;
+}
+.sidebar-dark .nav-item.active a,
+.sidebar-dark .nav-item a:hover {
+  color: #0782ff;
+}
+.sidebar-dark .nav-item.active a span,
+.sidebar-dark .nav-item a:hover span {
+  color: #0782ff;
+}
+.sidebar-dark .nav-item.active a i,
+.sidebar-dark .nav-item a:hover i {
+  color: #0782ff;
+}
+.sidebar .nav-item a.nav-link {
+  padding-left: 46px;
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+.sidebar .nav-item:first-child a.nav-link {
+  background-image: url(../icons/dashboard.png);
+}
+.sidebar .nav-item:nth-child(2) a.nav-link {
+  background-image: url(../icons/deposit.png);
+}
+.sidebar .nav-item:nth-child(3) a.nav-link {
+  background-image: url(../icons/borrow.png);
+}
+.sidebar .nav-item:nth-child(4) a.nav-link {
+  background-image: url(../icons/staking.png);
+}
+.sidebar .nav-item:nth-child(5) a.nav-link {
+  background-image: url(../icons/history.png);
+}
+.sidebar .nav-item:nth-child(6) a.nav-link {
+  background-image: url(../icons/governance.png);
+}
+/****************Dark -icon*****************/
+.dark-preview .sidebar .nav-item:first-child a.nav-link {
+  background-image: url(../icons/dashboard-dark.png);
+}
+.dark-preview .sidebar .nav-item:nth-child(2) a.nav-link {
+  background-image: url(../icons/deposit-dark.png);
+}
+.dark-preview .sidebar .nav-item:nth-child(3) a.nav-link {
+  background-image: url(../icons/borrow-dark.png);
+}
+.dark-preview .sidebar .nav-item:nth-child(4) a.nav-link {
+  background-image: url(../icons/staking-dark.png);
+}
+.dark-preview .sidebar .nav-item:nth-child(5) a.nav-link {
+  background-image: url(../icons/history-dark.png);
+}
+.dark-preview .sidebar .nav-item:nth-child(6) a.nav-link {
+  background-image: url(../icons/governance-dark.png);
+}
+
+.sidebar .nav-item.active:first-child a.nav-link,
+.sidebar .nav-item:first-child a.nav-link:hover {
+  background-image: url(../icons/dashboard-hover.png);
+}
+.sidebar .nav-item.active:nth-child(2) a.nav-link,
+.sidebar .nav-item:nth-child(2) a.nav-link:hover {
+  background-image: url(../icons/deposit-hover.png);
+}
+.sidebar .nav-item.active:nth-child(3) a.nav-link,
+.sidebar .nav-item:nth-child(3) a.nav-link:hover {
+  background-image: url(../icons/borrow-hover.png);
+}
+.sidebar .nav-item.active:nth-child(4) a.nav-link,
+.sidebar .nav-item:nth-child(4) a.nav-link:hover {
+  background-image: url(../icons/staking-hover.png);
+}
+.sidebar .nav-item.active:nth-child(5) a.nav-link,
+.sidebar .nav-item:nth-child(5) a.nav-link:hover {
+  background-image: url(../icons/history-hover.png);
+}
+.sidebar .nav-item.active:nth-child(6) a.nav-link,
+.sidebar .nav-item:nth-child(6) a.nav-link:hover {
+  background-image: url(../icons/governance-hover.png);
+}
+.sidebar .nav-item .nav-link img {
+  padding-right: 10px;
+}
+.sidebar .nav-item {
+  position: relative;
+  transition: all ease 0.3s;
+}
+.sidebar .nav-item .nav-link span {
+  font-size: 16px;
+  line-height: normal;
+  color: #252d43;
+  line-height: 30px;
+  font-weight: 400 !important;
+}
+.sidebar .nav-item .nav-link i {
+  color: #252d43;
+}
+li.nav-item {
+  align-items: center;
+  display: flex;
+}
+.topbar form > .input-group > input {
+  height: auto;
+  border: 0.8px solid #acacac;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.topbar .navbar-search {
+  width: 309px;
+  border-radius: 4px;
+}
+.topbar .navbar-search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.topbar .navbar-search input::-moz-placeholder {
+  colo: #ffffff;
+}
+.topbar .navbar-search input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.topbar .navbar-search input:-moz-placeholder {
+  color: #ffffff;
+}
+.search-btn {
+  border: 0.8px solid #acacac;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.search-btn:hover,
+.search-btn:focus {
+  background: #e78e4b;
+  background-color: #e78e4b;
+}
+.search-btn i {
+  color: #ffffff;
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.icon-size {
+  width: 22px;
+}
+#wrapper #content-wrapper {
+  background-color: #f4f4f7;
+}
+.card-title {
+  font-size: 18px;
+  margin: 0;
+  line-height: 36px;
+  color: #000;
+  display: inline-table;
+  font-weight: 500;
+}
+.card-header ul li a {
+  line-height: 36px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000000;
+  padding: 0px 15px;
+  border: 1px solid #b0bec5;
+  font-size: 14px;
+  display: inline-table;
+  font-style: normal;
+}
+.Deposits {
+  border-bottom: 1px solid #cfd8dc !important;
+  padding: 1rem 1.2rem;
+}
+.card-subtitme {
+  padding: 1rem 1.2rem;
+  margin-bottom: 0;
+}
+.card-subtitme h5 {
+  margin: 0px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  position: relative;
+  line-height: 30px;
+  padding-top: 5px;
+}
+.card-subtitme h5 span {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #607d8b;
+}
+.card-subtitme h5::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6px;
+  background: #cfd8dc;
+  border-radius: 20px;
+}
+.card-subtitme h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  height: 6px;
+  background: #0782ff;
+  border-radius: 20px;
+}
+.card-header ul li.active a {
+  border-radius: 3px 3px 3px 3px;
+  background: #78909c;
+  /* border-right:none; */
+  color: #fff;
+}
+.card-header ul li.usd-1 a {
+  border-radius: 3px 3px 3px 3px;
+  border-right: none;
+  color: #000;
+  background: none !important;
+}
+.card-header ul li.deactive a {
+  border-radius: 3px 3px 3px 3px;
+  /* border-left:none; */
+  color: #000;
+  background: none;
+}
+.card-header ul li.native-1 a {
+  border-radius: 3px 3px 3px 3px;
+  border-left: none;
+}
+.card-header ul li.active a,
+.card-header ul li a:hover {
+  background: #78909c !important;
+  color: #fff;
+  text-decoration: none;
+}
+.card {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+}
+.card-header {
+  padding: 1rem 1.2rem !important;
+}
+.market .card-header {
+  padding: 1rem 1.5rem !important;
+}
+.market .card-body {
+  padding: 0px !important;
+}
+.market.table {
+  position: relative;
+  /*height: calc(100vh - 240px);*/
+  height: 406px;
+  margin-bottom: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+.market tbody {
+  overflow-y: auto;
+  /* height: calc(100vh - 300px);*/
+  height: 354px;
+  width: 100%;
+  position: absolute;
+  margin-top: 0;
+  top: 50px;
+  padding-right: 1%;
+}
+.table thead {
+  background: #e9f2ff;
+  padding-right: 2%;
+}
+.market tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+.market th {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.market td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.market tr td {
+  width: 16.6%;
+  /* padding-left: 25px; */
+}
+.market tr th {
+  width: 16.6%;
+  /* padding-left: 25px; */
+}
+.marekt td-disactive {
+  width: 48%;
+}
+.market tr .Assets {
+  padding-left: 15px;
+}
+.market tr .Market {
+  width: 12%;
+}
+.market tr .Borrowed {
+  width: 15%;
+}
+.market tr .Stable {
+  width: 15%;
+}
+.table tbody::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.table tbody::-webkit-scrollbar {
+  width: 4px;
+}
+.table tbody::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #78909c;
+}
+/*.table tbody::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+	background-color: fff;
+}
+
+.table tbody::-webkit-scrollbar{
+	width: 4px;
+	border-radius:10px;
+	background-color: fff;
+	padding-left:20px;
+}
+.table tbody::-webkit-scrollbar-thumb{
+	background-color: #78909C;
+}*/
+.table {
+  padding: 0px;
+  margin: 0px;
+}
+.table td {
+  border-top: 1px solid #cfd8dc;
+}
+.table .borrowing {
+  padding-left: 10px !important;
+}
+.table thead {
+  background: #e9f2ff;
+}
+.table thead tr th {
+  border: none;
+}
+.table tr th,
+.table tr td {
+  color: #000;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 400;
+}
+.card-header.bg-transparent {
+  border: none;
+  display: flex;
+  position: relative;
+}
+.card-header ul {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+  display: flex;
+  flex-grow: 1;
+}
+.table tr td img {
+  margin-right: 10px;
+}
+.table tr td span {
+  color: #607d8b;
+}
+.table td,
+.table th {
+  padding: 10px 0.5rem;
+}
+.dashbrght-sidebar {
+  position: fixed;
+}
+.sidebar.toggled {
+  overflow: visible;
+  width: 3.4rem !important;
+}
+#wrapper #content-wrapper {
+  background-color: #f4f4f7;
+  padding-top: 70px;
+}
+.navbar-nav.sidebar {
+  width: 240px !important;
+}
+.sidebar-brand img.logosmall {
+  display: none;
+}
+.sidebar-brand img.logoexpand {
+  display: block;
+}
+.sidebar .nav-item .nav-link i {
+  float: left;
+  line-height: 32px;
+  display: inline-table;
+  font-size: 17px;
+}
+.table tr td a.btn.btn-light {
+  color: #0782ff;
+  font-size: 12px;
+  background: #f4f4f7;
+  line-height: 20px;
+  padding: 3px 7px;
+}
+.table tr td a.btn.btn-light:hover {
+  border: none;
+  background: #0782ff;
+  color: #fff;
+}
+.deposits.table {
+  position: relative;
+  /*height: calc(100vh - 350px);*/
+  height: 305px;
+  margin-bottom: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+.deposits tbody {
+  overflow-y: auto;
+  /*height: calc(100vh - 400px);*/
+  height: 255px;
+  width: 99%;
+  position: absolute;
+  margin-top: 0;
+  top: 50px;
+  padding-right: 1%;
+}
+.deposits tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+.deposits tr .Assets {
+  width: 25%;
+  padding-left: 1rem;
+}
+.table tr .Current {
+  width: 25%;
+}
+
+.deposits tr .apy {
+  width: 14%;
+}
+.deposits tr .Withdraw {
+  width: 15%;
+  text-overflow: unset;
+}
+.deposits tr .Deposit {
+  width: 13%;
+  text-overflow: unset;
+}
+.deposits tr .Collateral {
+  width: 25%;
+  text-align: center;
+}
+.deposits tr .Owned {
+  width: 25%;
+  text-align: center;
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+}
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label:after {
+  transform: translateX(0.75rem);
+}
+.custom-switch .custom-control-label:after {
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
+  background-color: #b7b9cc;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 6px;
+  left: -1.2rem;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+}
+.custom-control-input:checked ~ .custom-control-label:before {
+  color: #fff;
+  border: none !important;
+  background-color: #0782ff !important;
+  width: 36px;
+  pointer-events: all;
+  border-radius: 30px;
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  content: "";
+  height: 20px;
+}
+.custom-switch .custom-control-label::before {
+  width: 36px;
+  border-radius: 30px;
+  top: 0.25rem;
+  left: -1.5rem;
+  height: 20px;
+}
+.topbar.navbar-light .navbar-nav .icon.nav-item .nav-link {
+  color: #78909c !important;
+  font-size: 25px !important;
+}
+li.nav-item.dropdown {
+  margin: 0px 10px;
+}
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+  height: 32px !important;
+  color: #000 !important;
+  border-radius: 3px;
+}
+.profiler-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 10px;
+}
+li.nav-item.dropdown img.img-profile {
+  width: 20px !important;
+  height: 20px !important;
+}
+.topbar.navbar-light .navbar-nav .nav-item.dropdown .nav-link {
+  background: #f4f4f7;
+}
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+  height: 32px !important;
+  color: #000 !important;
+  border-radius: 3px;
+}
+.dropdown .dropdown-menu a.nav-link {
+  background: none !important;
+}
+.topbar.navbar-light
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  a.nav-link
+  h5 {
+  font-size: 14px;
+  color: #607d8b;
+}
+.topbar.navbar-light .navbar-nav .nav-item.dropdown .dropdown-menu a.nav-link {
+  height: auto !important;
+  display: inline-table;
+  padding: 5px 10px;
+}
+.topbar.navbar-light
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  a.nav-link.text-center {
+  border-top: 1px solid #cfd8dc;
+  width: 100%;
+  text-align: center !important;
+  border-radius: 0px;
+}
+span.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #30b651;
+  display: inline-table;
+  margin-right: 10px;
+}
+footer.footer {
+  position: absolute;
+  left: 0px;
+  z-index: 9999;
+  bottom: 100px;
+  width: 100%;
+}
+footer.footer ul {
+  display: flex;
+  text-align: left;
+  padding: 0px 10px;
+  margin: 0px;
+}
+footer.footer ul li {
+  padding: 0px 10px;
+}
+footer.footer ul li a {
+  font-size: 14px;
+  color: #607d8b;
+}
+footer.footer ul span.Ellipse {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #607d8b;
+  margin: 12px 0px 0px;
+}
+.topbar ul .dropdown .dropdown-menu {
+  width: auto;
+  right: 0px;
+  left: auto;
+  min-width: 100%;
+  margin: 0px;
+}
+/********Rewards *****************/
+.rewards.table {
+  /* position: relative; */
+  /*height: calc(100vh - 350px);*/
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.rewards thead {
+  width: 100%;
+  padding-right: 0px;
+}
+
+.rewards thead tr {
+  width: 100%;
+  background: #e9f2ff;
+}
+
+.rewards.table {
+  position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.rewards tbody {
+  overflow-y: auto;
+  width: 100%;
+  margin-top: 0;
+  top: 50px;
+  padding-right: 1%;
+}
+.rewards tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+.rewards tr:hover {
+  background: #f4f4f7 !important;
+  cursor: pointer;
+}
+.rewards tbody tr:not(:first-child) {
+  border-top: 1px;
+}
+.rewards tr .selected {
+  background: #f4f4f7;
+}
+.rewards tr .Assets {
+  width: 60%;
+  padding-left: 1rem;
+}
+.rewards tr .Balance {
+  width: 40%;
+}
+/********Assets Details***********/
+.breadcrumb-area ol.breadcrumb {
+  padding: 0px;
+  background: none;
+  margin: 0px;
+  border-radius: 0px;
+}
+ol.breadcrumb li.breadcrumb-item {
+  padding: 0px 10px;
+  color: #607d8b;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+ol.breadcrumb li.breadcrumb-item span {
+  padding-left: 15px;
+}
+ol.breadcrumb li.breadcrumb-item a {
+  color: #000;
+}
+ol.breadcrumb li.breadcrumb-item a:hover {
+  text-decoration: none;
+  color: #607d8b;
+}
+.breadcrumb-area ol.breadcrumb li.breadcrumb-item:first-child {
+  padding-left: 0px;
+}
+.asset-section .card {
+  padding: 15px;
+}
+.asset-section .card .card-header {
+  padding: 0px !important;
+}
+.asset-section .card h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0px;
+  line-height: 24px;
+}
+.asset-section .card .card-body {
+  padding: 20px 0px 0px;
+}
+.asset-section li {
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+.asset-section li span.icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+.asset-section li span.icon.stable {
+  background: #8e24aa;
+}
+.asset-section li span.icon.variable {
+  background: #039be5;
+}
+.asset-section .card-body img {
+  width: 100%;
+}
+.information-section h2 {
+  color: #000000;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 500;
+}
+.information-section .card-header {
+  border-bottom: 1px solid #cfd8dc;
+}
+.information-section ul li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.information-section thead {
+  background: none;
+  width: 100%;
+}
+.information-section table tr th,
+.information-section table tr td {
+  padding: 0px;
+  border: none;
+  color: #000000;
+  background: none !important;
+}
+.information-section ul.buttons {
+  padding: 20px 0px 0px;
+  margin: 0px;
+}
+.information-section ul.buttons li {
+  font-size: 13px;
+  padding: 0px 10px 0px 0px;
+}
+.information-section ul.buttons li:last-child {
+  padding-right: 0px;
+}
+.information-section ul.buttons li a.btn {
+  font-size: 13px;
+  padding: 0px 11px;
+  margin: 0px;
+  line-height: 32px;
+  background: #cfd8dc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.information-section ul.buttons li a.Borrow {
+  background: #f4f4f7;
+  color: #0782ff;
+}
+.information-section ul.buttons li a.Deposit {
+  background: #0782ff;
+}
+.information-section .wpb-wrapper {
+  background: #f4f4f7;
+  border-radius: 3px;
+  padding: 10px 0px;
+}
+.information-section .wpb-wrapper h3 {
+  font-size: 12px;
+  color: #000;
+  margin: 0px;
+  line-height: 22px;
+}
+.information-section .wpb-wrapper h4 {
+  font-size: 14px;
+  color: #000;
+  margin: 0px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.information-section .wpb-wrapper a {
+  font-size: 14px;
+  color: #30b651;
+}
+.Utilisation h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.Utilisation h3 {
+  font-size: 12px;
+  color: #607d8b;
+  line-height: 30px;
+  margin: 0px;
+}
+.available-liquidity h3 {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  margin: 0px 0px 3px;
+  line-height: 30px;
+}
+.available-liquidity h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.available-liquidity h4 {
+  font-size: 12px;
+  color: #607d8b;
+  font-weight: 400;
+}
+.Stable .Borrowing {
+  box-shadow: 0px 0px 0px #000;
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+.Stable .Borrowing.first {
+  background: rgba(251, 140, 0, 0.15);
+}
+.Stable .Borrowing.second {
+  background: rgba(142, 36, 170, 0.15);
+}
+.Stable .Borrowing.third {
+  background: rgba(3, 155, 229, 0.15);
+}
+.Stable .Borrowing h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+}
+.Stable .Borrowing.first h3 {
+  color: #fb8c00;
+}
+.Stable .Borrowing.second h3 {
+  color: #8e24aa;
+}
+.Stable .Borrowing.third h3 {
+  color: #039be5;
+}
+.Borrowing .Deposit-list {
+  padding: 0px;
+  margin: 15px 0px 0px;
+}
+.Borrowing .Deposit-list li {
+  padding: 0px;
+  margin: 5px 0px 0px;
+  color: #000000;
+  font-size: 14px;
+}
+.Borrowing .Deposit-list li span {
+  text-align: right;
+  float: right;
+}
+.button-area {
+  position: absolute;
+  bottom: 20px;
+}
+/********Deposit***********/
+.card-body {
+  position: relative;
+}
+.deposit tr .Assets {
+  padding-left: 25px;
+}
+.deposit thead {
+  padding-right: 2%;
+  display: inline-grid;
+}
+.deposit.table {
+  position: relative;
+  height: calc(100vh - 200px);
+  /*height:305px;*/
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.deposit tbody {
+  overflow-y: auto;
+  height: calc(100vh - 255px);
+  /*height:255px;*/
+  width: 99%;
+  position: absolute;
+  margin-top: 0;
+  top: 50px;
+  padding-right: 1%;
+}
+.deposit tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+.deposit.table tr .details .btn-light {
+  background: #f4f4f7;
+  padding: 0px 25px !important;
+  line-height: 24px !important;
+  font-size: 13px !important;
+}
+.btn-light:focus {
+  outline: none;
+  border: none;
+}
+.aramaKutusu {
+  position: relative;
+  padding: 0px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.aramaKutusu a {
+  color: orangered;
+  width: var(--aramaKutusu-boyut);
+  height: var(--aramaKutusu-boyut);
+  /*background: white;*/
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: calc(var(--aramaKutusu-boyut) * 0.6);
+}
+.aramaKutusu input {
+  border: none;
+  background: none;
+  outline: none;
+  color: 000;
+  font-size: 14px;
+  padding: 0;
+  width: 0;
+  transition: 0.3s ease-in;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 36px;
+}
+.aramaKutusu:hover {
+  padding: 0 12px;
+  border: 1px solid #78909c;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.aramaKutusu:hover > input {
+  width: var(--aramaKutusu-uzunluk);
+}
+.aramaKutusu:hover > a {
+  background: transparent;
+}
+.underline-text {
+  text-decoration: underline;
+}
+/********Deposit-Deatils***********/
+
+.deposit-details .wpb-wrapper {
+  box-shadow: 0px 0px 0px #000;
+  width: 100%;
+  background: #f4f4f7;
+  border-radius: 3px;
+  padding: 10px 0px;
+}
+.deposit-details .wpb-wrapper h5 {
+  font-size: 12px;
+  color: #607d8b;
+  margin: 0px;
+  line-height: 22px;
+}
+.deposit-details .wpb-wrapper h3 {
+  font-size: 12px;
+  color: #000;
+  margin: 0px;
+  line-height: 22px;
+}
+.deposit-details .wpb-wrapper h4 {
+  font-size: 14px;
+  color: #000;
+  margin: 0px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.deposit-details h2 {
+  color: #000000;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.deposit-details .card-header {
+  border-bottom: 1px solid #cfd8dc;
+}
+.deposit-details thead {
+  background: none;
+  width: 100%;
+}
+ul.borrows li {
+  padding: 0px 0px 12px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+}
+ul.borrows {
+  padding: 0px;
+  margin: 0px;
+}
+.away-main ul.category {
+  margin: 0px;
+  padding: 0px;
+}
+.away-main ul.category li {
+  color: #000000;
+  font-size: 12px;
+  padding: 0px 15px 0px 0px;
+}
+.away-main ul.category li span {
+  width: 8px;
+  height: 8px;
+  float: left;
+  border-radius: 100%;
+  margin: 3px 8px 0px 0px;
+}
+.away-main ul.category li span.away {
+  background: #fb8c00;
+}
+.away-main ul.category li span.stable {
+  background: #8e24aa;
+}
+.away-main ul.category li span.variable {
+  background: #039be5;
+}
+h3.specific {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  margin: 0px;
+}
+.deposit-details .input-group {
+  background: #ffffff;
+  border: 1px solid #b0bec5;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  width: 100%;
+  height: 44px;
+  margin: 0px;
+  padding: 0px 10px !important;
+}
+.deposit-details .input-group h4 {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  color: #607d8b;
+}
+.deposit-details .input-group input {
+  font-size: 18px;
+  color: #000000;
+  border: none;
+  line-height: 36px;
+  padding: 0px !important;
+  margin: 0px !important;
+  background: none;
+}
+.deposit-details ul {
+  margin: 0px;
+  padding: 0px;
+}
+.deposit-details ul a.btn {
+  width: 100%;
+  background: #f4f4f7;
+  border-radius: 4px;
+  color: #0782ff;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0px !important;
+}
+.deposit-details p {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #607d8b;
+}
+.deposit-details .btn {
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.deposit-details .continue {
+  background: #0782ff;
+  color: #fff !important;
+}
+.deposit-details .continue-light {
+  background: #cfd8dc;
+}
+.deposit-details .continue-light:hover {
+  background: #0782ff;
+}
+.deposit-details .btn:focus {
+  outline: none;
+  border: none;
+}
+.deposit-details a.back {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #607d8b;
+}
+.deposit-details a.back:hover {
+  color: #0782ff;
+  text-align: none;
+}
+.details-borrow {
+  width: 10%;
+}
+.variable {
+  width: 27%;
+}
+.stable {
+  width: 18%;
+}
+.Safmer h3 {
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  line-height: 20px;
+  color: #607d8b;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.Safmer h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #30b651 0%,
+    #fbd300 32.03%,
+    #fb8c00 49.81%,
+    #ff5c00 67.66%,
+    #ef392f 100%
+  );
+  border-radius: 20px;
+  height: 8px;
+}
+.Safmer h3 span {
+  float: right;
+}
+.interest .card {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.06);
+  background: #f4f4f7;
+  border: none;
+  padding: 10px;
+}
+.interest figure img.hover {
+  display: none;
+}
+.interest h4 {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  padding: 5px 0px 0px;
+}
+.interest h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.interest a.card:hover {
+  text-decoration: none;
+}
+.interest a.selected:hover {
+  text-decoration: none;
+}
+.interest figure img.hover {
+  display: none;
+}
+.interest a.stable-area:hover,
+.interest a.stable-area.selected {
+  background: #8e24aa;
+}
+.interest a.variable-area:hover,
+.interest a.variable-area.selected {
+  background: #039be5;
+}
+.interest a.card:hover figure img.hover,
+.interest a.card.selected figure img.hover {
+  display: inline-block;
+}
+.interest a.card:hover figure img.normal,
+.interest a.card.selected figure img.normal {
+  display: none;
+}
+.interest a.card:hover h4,
+.interest a.card.selected h4 {
+  color: #fff;
+}
+.interest a.card:hover h5,
+.interest a.card.selected h5 {
+  color: #fff;
+}
+.deposit-details ul.transaction {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 18px 25px !important;
+}
+.deposit-details ul.transaction li {
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  color: #000000;
+  padding: 4px 0px;
+}
+.deposit-details ul.transaction li img {
+  padding-right: 10px;
+}
+.deposit-details ul a.btn.btn-primary {
+  background: #0782ff;
+  color: #fff;
+}
+.stake {
+  height: calc(100vh - 120px);
+}
+.stake-rewards {
+  height: 395px;
+}
+.stake-rewards ul a.btn {
+  font-size: 13px;
+  line-height: 32px;
+  text-align: center;
+  padding: 0px !important;
+}
+.stake-rewards .btn {
+  height: 32px;
+}
+
+h5.balance {
+  font-size: 12px;
+  line-height: 16px;
+  color: #607d8b;
+}
+.balance-amount {
+  font-size: 12px;
+  line-height: 21px;
+  color: #607d8b;
+  padding-top: 10px;
+}
+.unstake-label {
+  color: #0782ff;
+  font-size: 14px;
+}
+.deposit-details .input-group.amount input {
+  font-size: 18px;
+  line-height: 23px;
+  color: #607d8b;
+}
+.history tr .Transaction {
+  width: 35%;
+}
+.deposit-section ul li.clender {
+  padding-right: 20px;
+}
+.deposit-section ul li.clender button {
+  background: #ffffff;
+  border: 1px solid #b0bec5;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  line-height: 36px;
+  width: 192px;
+  justify-content: start;
+  text-align: left;
+  padding: 0px 10px;
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+}
+.deposit-section ul li.clender button:focus {
+  outline: none !important;
+}
+.deposit-section ul li.clender button img {
+  padding-right: 10px;
+}
+.deposit-section ul li.clender button::after {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  border-top: 0.45em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0em solid transparent;
+  border-left: 0.4em solid transparent;
+}
+.deposit-section .clender .dropdown-menu {
+  padding: 10px 20px;
+  margin: 0px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.deposit-section .clender .dropdown-menu label.month {
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  margin: 3px 0px;
+}
+.deposit-section .clender .dropdown-menu i.fas.fa-caret-left {
+  float: left;
+  line-height: 24px;
+}
+.deposit-section .clender .dropdown-menu i.fas.fa-caret-right {
+  float: right;
+  line-height: 24px;
+}
+.card .card-header .dropdown .dropdown-menu .calendar {
+  padding: 5px 10px;
+}
+.calendar {
+  text-align: center;
+  padding: 0;
+}
+.calendar .month {
+  font-size: 16px;
+  color: #000000;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.calendar td {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  cursor: pointer;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  padding: 6px 9px;
+}
+.calendar tr:hover td {
+  background: rgba(7, 130, 255, 0.5);
+}
+.calendar tr td:hover {
+  background: #0782ff;
+  color: #fff;
+}
+.calendar td:first-child {
+  border-left: 0;
+}
+.calendar th {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  padding: 5px;
+}
+.calendar tr:last-child td {
+  border-bottom: 0;
+}
+td.disabled {
+  opacity: 0.5;
+}
+.deposit-details select {
+  border: none;
+}
+.deposit-details select:focus {
+  outline: none;
+}
+.deposit-details ul.Proposals li a {
+  border: none;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+  padding: 0px;
+  background: none;
+}
+.deposit-details ul.Proposals li {
+  margin: 0px;
+}
+.deposit-details ul.Proposals li ul {
+  display: inline-table;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  margin: 0px;
+  padding: 0px;
+}
+.deposit-details ul.Proposals li .dropdown-menu.show {
+  width: auto !important;
+  border: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  min-width: 100%;
+}
+.deposit-details ul.Proposals li ul li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  line-height: 30px;
+  padding: 0px 15px;
+  border-bottom: 1px solid #cfd8dc;
+}
+.deposit-details ul.Proposals li ul li span.icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.migration h3 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  justify-content: left;
+  width: auto;
+  margin: 0px;
+}
+.Proposals .card-header {
+  padding: 1rem 1rem !important;
+}
+.migration ul.activation li {
+  font-size: 12px;
+  line-height: 22px;
+  color: #000000;
+}
+.migration ul.activation li a.btn {
+  padding: 0px !important;
+  line-height: 21px !important;
+  height: 24px;
+  border-radius: 2px !important;
+  width: 72px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+}
+.migration a.btn {
+  margin-top: 3px;
+  padding: 0px !important;
+  line-height: 24px !important;
+  height: 24px;
+  border-radius: 2px !important;
+  width: 72px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.migration a.btn.executed {
+  background-color: #8e24aa !important;
+}
+.migration a.btn.failed {
+  background-color: #ef392f !important;
+}
+.migration a.btn.validating {
+  background-color: #fb8c00 !important;
+}
+.migration a.btn.Executed {
+  background-color: #30b651 !important;
+}
+.migration hr {
+  width: 100%;
+  border-width: 4px;
+  /* background: #CFD8DC; */
+  border-radius: 20px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.migration hr.green {
+  border-color: #30b651;
+}
+.migration hr.gray {
+  border-color: #cfd8dc !important;
+}
+/* .migration hr::before, .migration hr::after {
+ content: "";
+ height: 8px;
+ border-radius: 20px;
+ position: absolute;
+ left: 0px;
+ bottom: 0px;
+}
+.migration hr::before {
+ background: #EF392F;
+ width: 42%;
+}
+.migration hr::after {
+ background: #30B651;
+ width: 41%;
+} */
+.migration {
+  position: relative;
+}
+.deposit-details .migration p {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: end;
+  color: #607d8b;
+  width: 40% !important;
+  position: relative;
+}
+.deposit-details .migration span {
+  color: #000;
+}
+.deposit-details.Proposals-details .card {
+  height: calc(100vh - 120px);
+}
+.deposit-details .card-header .icon-details li a {
+  background: none;
+  border: none;
+  padding: 0px 7px;
+  line-height: normal;
+}
+.deposit-details .card-header .icon-details li:last-child a {
+  padding-right: 0px;
+}
+.bottom-line {
+  border-width: 6px;
+  width: 100%;
+  border-radius: 20px;
+  border-color: #0782ff;
+}
+hr {
+  border-color: #cfd8dc;
+}
+.Addresses-area {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 0px;
+}
+.deposit-details ul a.btn.Addresses {
+  background: #0782ff;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+}
+.rationale h3 {
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  line-height: 30px;
+}
+.rationale p {
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.rationale ul {
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+.rationale ul li {
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  padding: 2px 0px 2px 15px;
+}
+.rationale ul li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: #0782ff;
+  border-radius: 20px;
+}
+.Votes hr.bottom-module.green {
+  border-color: #30b651;
+  border-radius: 20px;
+  border-width: 6px;
+}
+.Votes hr.bottom-module.gray {
+  border-color: #cfd8dc;
+  border-radius: 20px;
+  border-width: 6px;
+}
+.Votes li {
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+}
+.deposit-details .card.proposals-area {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.module-details .card.proposals-area {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+.deposit-details .rationale {
+  height: calc(100vh - 240px);
+  overflow-y: scroll;
+  padding-right: 2%;
+}
+.deposit-details .rationale::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.deposit-details .rationale::-webkit-scrollbar {
+  width: 4px;
+}
+.deposit-details .rationale::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #78909c;
+}
+.modal .modal-dialog {
+  background: #ffffff;
+  border-radius: 3px;
+  max-width: 864px;
+  border: none !important;
+}
+.modal .modal-content {
+  background: none;
+  border: none !important;
+}
+.modal-header h4.modal-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  color: #000000;
+}
+.modal-header button.close {
+  margin: 0px;
+  padding: 0px;
+  color: #78909c;
+  opacity: 1 !important;
+  line-height: 30px;
+}
+.Votes-Yes li {
+  line-height: 30px;
+  font-size: 14px;
+  align-items: center;
+  color: #000000;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 4px 0px;
+}
+.Votes-Yes li:last-child {
+  border-bottom: none;
+}
+
+.voted-detail li {
+  display: inline-block;
+}
+.voted-detail a {
+  width: 68px !important;
+  margin-left: 10px;
+}
+.bottom-main {
+  border-width: 8px;
+  border-radius: 20px;
+  position: relative;
+  border-color: #cfd8dc;
+}
+hr.yes.bottom-main {
+  border-color: #30b651;
+}
+hr.no.bottom-main::before {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #ef392f;
+  border-radius: 20px;
+}
+/*switch styles*/
+
+.btn-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+div.btn-container i {
+  display: inline-block;
+  position: relative;
+  top: -9px;
+}
+label {
+  font-size: 13px;
+  color: #424242;
+  font-weight: 500;
+}
+.btn-color-mode-switch {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner {
+  margin: 0px;
+  width: 36px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #b0bec5;
+  border-radius: 11px;
+  display: block;
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+  content: attr(data-on);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  top: 7px;
+  right: 20px;
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+  content: attr(data-off);
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 26px;
+  position: absolute;
+  right: 18px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+}
+.btn-color-mode-switch > .alert {
+  display: none;
+  background: #ff9800;
+  border: none;
+  color: #fff;
+}
+.btn-color-mode-switch input[type="checkbox"] {
+  cursor: pointer;
+  width: 36px;
+  height: 20px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0px;
+  left: 0px;
+}
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner {
+  background: #0782ff;
+  color: #fff;
+}
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:after {
+  content: attr(data-on);
+  left: 18px;
+  background: #fff;
+}
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:before {
+  content: attr(data-off);
+  right: auto;
+  left: 20px;
+}
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner {
+  /*background: #66BB6A; */
+  /*color: #fff;*/
+}
+.btn-color-mode-switch input[type="checkbox"]:checked ~ .alert {
+  display: block;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item.dropdown.theme a::after {
+  display: none !important;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item.dropdown.theme span {
+  padding-right: 50px;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+}
+.topbar.navbar-light .navbar-nav .nav-item.dropdown.theme .btn-container {
+  margin: 7px 0px 0px;
+}
+.topbar.navbar-light .navbar-nav .nav-item.dropdown.theme {
+  background: #f4f4f7;
+  height: 32px !important;
+  color: #000 !important;
+  border-radius: 3px;
+  padding-right: 10px;
+}
+.sidebar-brand img.logodark {
+  display: none;
+}
+.blue-border {
+  border: solid #6babec54 1px !important;
+}
+/********dark-preview***********/
+.dark-preview {
+  background: #1b2131;
+}
+.dark-preview #wrapper #content-wrapper {
+  background: #1b2131;
+}
+.dark-preview .bg-customdark,
+.sticky-footer.bg-dgery {
+  background-color: #252d43 !important;
+  background: #252d43 !important;
+}
+.dark-preview .sidebar-brand img.logodark {
+  display: inline-table;
+}
+.dark-preview .sidebar-brand img.logoexpand {
+  display: none;
+}
+.dark-preview .sidebar-brand img.logoexpand_dark {
+  display: block;
+}
+.sidebar-brand img.logoexpand_dark {
+  display: none;
+}
+.dark-preview .navbar-nav.sidebar {
+  background: #252d43 !important;
+}
+.dark-preview .sidebar .nav-item .nav-link span {
+  color: #fff;
+}
+.dark-preview .sidebar-dark .nav-item.active a span,
+.dark-preview .sidebar-dark .nav-item a:hover span {
+  color: #0782ff;
+}
+.dark-preview .navbar-default.shadow {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25) !important;
+}
+.dark-preview ol.breadcrumb li.breadcrumb-item a {
+  color: #fff;
+}
+.dark-preview .card {
+  background-color: #252d43;
+}
+.dark-preview .deposit-details h2 {
+  color: #fff;
+}
+.dark-preview .deposit-details .card-header {
+  border-bottom: 1px solid #404d5f;
+}
+.dark-preview .Votes li {
+  color: #fff;
+}
+.dark-preview .rationale h3 {
+  color: #fff;
+}
+.dark-preview .rationale p {
+  color: #fff;
+}
+.dark-preview .rationale ul li {
+  color: #fff;
+}
+.dark-preview hr.line {
+  border-color: #37474f;
+}
+.dark-preview ul.borrows li {
+  color: #fff;
+}
+.dark-preview .topbar.navbar-light .navbar-nav .nav-item.dropdown .nav-link {
+  background: #1b2131;
+  color: #fff !important;
+}
+.dark-preview .topbar.navbar-light .navbar-nav .nav-item.dropdown.theme {
+  background: #1b2131;
+}
+.dark-preview .topbar.navbar-light .navbar-nav .nav-item.dropdown.theme span {
+  color: #fff;
+}
+.dark-preview .topbar.navbar-light .navbar-nav .icon.nav-item .nav-link {
+  color: #cfd8dc !important;
+}
+.dark-preview .card-title {
+  color: #fff;
+}
+.dark-preview .table thead {
+  background: #1b2131;
+}
+.dark-preview .information-section thead {
+  background: none;
+  width: 100%;
+}
+.dark-preview .table tr th {
+  color: #90a4ae;
+}
+.dark-preview .table tr td {
+  color: #fff;
+  border-color: #404d5f;
+}
+.dark-preview tr:hover td {
+  background: #1b2131;
+}
+.dark-preview tr .selected {
+  background: #404d5f;
+}
+.dark-preview .card-header ul li.active a {
+  background: #cfd8dc;
+  color: #1b2131;
+}
+.dark-preview .card-header ul li.deactive a {
+  background: #1b2131;
+  color: #cfd8dc;
+  border: 1px solid #1b2131;
+}
+.dark-preview .card-subtitme h5 {
+  color: #fff;
+}
+
+.dark-preview .table tr td a.btn.btn-light {
+  background: #607d8b;
+  color: #fff;
+}
+.dark-preview .dropdown-menu {
+  background: #252d43;
+  border: none;
+}
+.dark-preview h2 {
+  color: #fff !important;
+}
+.dark-preview h3 {
+  color: #fff !important;
+}
+.dark-preview h4 {
+  color: #fff !important;
+}
+.dark-preview p {
+  color: #fff !important;
+}
+.dark-preview li {
+  color: #fff;
+}
+.dark-preview .away-main ul.category li {
+  color: #fff;
+}
+.table tr td a.btn {
+  border: none;
+}
+.dark-preview .table.borrows tr th {
+  color: #fff;
+}
+.dark-preview .information-section .wpb-wrapper {
+  background: #1b2131;
+}
+.dark-preview .deposit-details .wpb-wrapper {
+  background: #1b2131 !important;
+  border: none;
+}
+.dark-preview .deposit-details .input-group {
+  background: #1b2131;
+  border: 1px solid #1b2131;
+}
+.dark-preview .deposit-details .input-group h4 {
+  color: #607d8b !important;
+}
+
+.dark-preview .deposit-details .input-group input {
+  color: #fff !important;
+}
+.dark-preview .deposit-details ul a.btn {
+  background: #607d8b !important;
+  color: #fff !important;
+}
+.dark-preview .deposit-details p {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #607d8b !important;
+}
+.dark-preview .Borrowing .Deposit-list li {
+  color: #fff;
+}
+.dark-preview .information-section ul.buttons li a.btn.repay {
+  background: #1b2131;
+  color: #607d8b;
+}
+.dark-preview .information-section ul.buttons li a.btn.withdraw {
+  background: #1b2131;
+  color: #607d8b;
+}
+.dark-preview .card-subtitme h5::before {
+  background: #1b2131;
+}
+.dark-preview .Deposits {
+  border-bottom: 1px solid #404d5f !important;
+}
+.dark-preview .information-section .card-header {
+  border-bottom: 1px solid #404d5f;
+}
+.dark-preview .information-section ul li {
+  color: #fff;
+}
+.dark-preview .aramaKutusu:hover {
+  border: 1px solid #1b2131;
+  background: #1b2131;
+}
+.dark-preview .aramaKutusu input {
+  color: #607d8b;
+}
+.dark-preview .interest .card {
+  background: #333e5b;
+}
+.dark-preview .deposit-details .btn {
+  color: #252d43;
+}
+.dark-preview .deposit-details .btn:hover {
+  color: #fff;
+}
+.dark-preview .interest h5 {
+  color: #fff;
+}
+.dark-preview .deposit-details ul.transaction {
+  background: #333e5b;
+  border: 1px solid #333e5b;
+}
+.dark-preview .deposit-details ul.transaction li {
+  color: #fff;
+}
+.dark-preview .deposit-details .btn.continue {
+  color: #fff;
+}
+.dark-preview .deposit-details ul a.btn.claim {
+  background: #0782ff !important;
+  color: #fff !important;
+}
+.dark-preview .deposit-details ul a.btn.cooldown {
+  background: #0782ff !important;
+  color: #fff !important;
+}
+.deposit-details h2 span {
+  font-size: 14px;
+  color: #000;
+  float: right;
+}
+.dark-preview .deposit-details h2 span {
+  color: #0782ff;
+}
+.dark-preview .deposit-details .input-group input.amount {
+  color: #607d8b !important;
+}
+.dark-preview .deposit-section ul li.clender button {
+  background: #1b2131;
+  border: 1px solid #1b2131;
+  color: #fff;
+}
+.dark-preview .deposit-section .clender .dropdown-menu {
+  background: #1b2131;
+  border: 1px solid #1b2131;
+}
+.dark-preview .calendar td {
+  color: #f4f4f7;
+}
+.dark-preview .calendar th {
+  color: #607d8b;
+}
+.dark-preview .deposit-section .clender .dropdown-menu label.month {
+  color: #607d8b;
+}
+.dark-preview .calendar td.disabled {
+  color: #b0bec5;
+}
+
+.dark-preview .calendar tr:hover td {
+  background: rgba(7, 130, 255, 0.5);
+}
+.dark-preview .calendar tr td:hover {
+  background: #0782ff;
+}
+.dark-preview .deposit-details ul.Proposals li ul {
+  background: #252d43;
+  border: 1px solid #37474f;
+}
+.dark-preview .deposit-details ul.Proposals li ul li {
+  color: #fff;
+  border-bottom: 1px solid #37474f;
+}
+.dark-preview .deposit-details ul.Proposals li ul li:last-child {
+  border-bottom: none;
+}
+.dark-preview .deposit-details ul.Proposals li a {
+  color: #fff;
+}
+.migration ul.activation li {
+  color: #fff;
+}
+.dark-preview .deposit-details .migration p {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: end;
+  color: #607d8b;
+  width: 40% !important;
+  position: relative;
+}
+.migration ul.activation li a.btn.executed {
+  background: #8e24aa !important;
+}
+.migration ul.activation li a.btn.Voting {
+  background: #30b651 !important;
+}
+.migration ul.activation li a.btn.validating {
+  background: #fb8c00 !important;
+}
+.dark-preview .deposit-details ul a.btn.Addresses {
+  background: #0782ff !important;
+}
+.dark-preview .deposit-details .rationale p {
+  color: #fff !important;
+}
+.dark-preview .modal .modal-dialog {
+  background: #252d43;
+}
+.dark-preview .Votes-Yes li {
+  border-bottom: 1px solid #37474f;
+}
+.dark-preview .modal-header {
+  border-bottom: 1px solid #37474f;
+}
+.dark-preview .border-right {
+  border-right: 1px solid #37474f !important;
+}
+.dark-preview .Votes-Yes li.address-info {
+  color: #77dd88 !important;
+}
+.dark-preview .Votes-Yes li.address-info span {
+  color: #77dd88 !important;
+}
+
+.dark-preview .table thead {
+  background: #1b2131;
+}
+
+.topbar ul .dropdown.icon .dropdown-menu {
+  width: 240px;
+  padding: 0px;
+}
+.topbar .dropdown.icon a.nav-link {
+  background: none !important;
+}
+.topbar .dropdown.icon a.nav-link::after {
+  display: none !important;
+}
+.topbar ul .dropdown.icon .dropdown-menu .dark-theme {
+  padding: 15px;
+  border-bottom: 1px solid #cfd8dc;
+  line-height: 23px;
+}
+
+.topbar ul li.nav-item.icon.dropdown {
+  margin: 0px;
+}
+.topbar ul .dark-theme span {
+  font-size: 14px;
+  line-height: 100%;
+  align-items: center;
+  color: #000;
+  display: flex;
+}
+.dark-theme .btn-container {
+  height: 20px;
+}
+.dark-preview .topbar ul .dark-theme span {
+  color: #fff;
+}
+.dark-preview .topbar ul .dropdown.icon .dropdown-menu .dark-theme {
+  border-bottom-color: #37474f;
+}
+.topbar ul li.nav-item.icon.dropdown a {
+  font-size: 14px;
+  line-height: 100%;
+  align-items: center;
+  color: #000;
+  display: flex;
+  padding: 15px;
+}
+.dark-preview ul li.nav-item.icon.dropdown a {
+  color: #fff;
+}
+
+.topbar ul li.nav-item.icon.dropdown a img {
+  margin-right: 8px;
+}
+.topbar ul .dropdown.icon .dropdown-menu .dropdown-menu {
+  margin: 5px 0px;
+  border-radius: 3px;
+  padding: 0px !important;
+}
+.topbar ul li.nav-item.icon.dropdown a:hover {
+  text-decoration: none;
+}
+.dropdown .dropdown-menu {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.topbar ul .dropdown.icon .dropdown-menu .dropdown-menu a {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 100%;
+  align-items: center;
+  color: #000;
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #cfd8dc;
+}
+.dark-preview .topbar ul .dropdown.icon .dropdown-menu .dropdown-menu a {
+  color: #fff;
+  border-bottom-color: #37474f;
+}
+.topbar ul .dropdown.icon .dropdown-menu .dropdown-menu a:last-child {
+  border: none;
+}
+.topbar ul .dropdown.icon .dropdown-menu .dropdown-menu a:hover {
+  background: none !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #0782ff !important;
+  border-color: #0782ff !important;
+}
+.card.wallet {
+  height: calc(100vh - 120px);
+}
+.card.deposit-wallet {
+  height: calc(100vh - 120px);
+}
+.wallet h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+}
+.deposit-wallet {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+}
+.dark-preview .wallet h2 {
+  color: #000000;
+}
+.dark-preview .wallet h2 {
+  color: #fff;
+}
+/****/
+.dark-preview .MuiTableCell-body,
+.dark-preview .MuiTable-root tr td a {
+  color: #fff !important;
+  border-color: #404d5f !important;
+}
+.dark-preview .MuiTable-root thead tr .MuiTableCell-head,
+.dark-preview .table tr th {
+  color: #fff;
+  border-color: #404d5f;
+  background: #1b2131;
+}
+.dark-preview .MuiTable-root tr td a.btn.btn-light {
+  background: #607d8b;
+  color: #fff;
+}
+/*----------------------Landing-Page----------------------*/
+.landing-banner {
+  padding: 70px 0px;
+  background: url(../img/landing-bg.jpg) no-repeat center top;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-size: cover;
+}
+
+/****/
+.mobile-view {
+  display: none;
+}
+.mobile-view .row {
+  align-items: center;
+}
+.mobile-view-box {
+  background: #f4f4f7;
+  text-align: center;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 12px;
+}
+.mobile-view-box:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.mobile-view-box:last-child {
+  border-radius: 0 0 5px 5px;
+  border-bottom: none;
+}
+.available-liquidity.mobile-view h2 {
+  line-height: normal;
+}
+.available-liquidity.mobile-view h4 {
+  font-size: 14px;
+}
+
+.mobile-scroll > div {
+  overflow-x: inherit;
+  box-shadow: none;
+}
+
+.modal-bottom .MuiPaper-rounded {
+  border-radius: 5px;
+}
+
+@media all and (max-width: 767px) {
+  .landing-banner {
+    height: auto;
+    padding-bottom: 130px;
+  }
+  .market th {
+    text-overflow: inherit;
+    overflow: visible;
+    white-space: nowrap;
+    width: auto;
+  }
+  .market th,
+  .market td {
+    width: auto;
+  }
+  .market th:nth-child(4),
+  .market td:nth-child(4) {
+    width: 40px;
+  }
+
+  .market tr {
+    display: table;
+  }
+
+  .card-header ul li a {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    padding: 0px 5px;
+    border-radius: 10px !important;
+    cursor: pointer;
+  }
+  .card-header ul li.active a,
+  .card-header ul li.active a:hover {
+    background-color: #ffffff !important;
+    color: #0782ff !important;
+  }
+  .card-header ul li a:hover {
+    background-color: transparent !important;
+    color: #0782ff !important;
+  }
+  .card-header ul {
+    margin-top: 10px !important;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .card-header ul li {
+    flex-grow: 1;
+  }
+
+  .deposit-details h2.mobile-h2 {
+    font-size: 22px;
+  }
+
+  h3.mobile-h3 {
+    font-size: 14px;
+  }
+
+  .mt-0-mobile {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .button-area {
+    position: relative;
+  }
+  .information-section ul.buttons li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .information-section ul.buttons li a.btn {
+    margin: 10px 0 0 0;
+  }
+  .information-section ul.buttons li:last-child {
+    padding-right: 10px;
+  }
+  .information-section ul.buttons {
+    padding: 30px 0px 0px;
+    flex-wrap: wrap;
+  }
+  .input-mobile {
+    width: 100% !important;
+  }
+  .deposit-details .input-group {
+    flex-wrap: nowrap;
+  }
+  .per-btn li a.btn.btn-light,
+  .per-btn .btn-primary {
+    padding: 3px 10px !important;
+  }
+  .button-area-withdraw {
+    display: flex;
+  }
+  .button-area-withdraw .btn-primary {
+    padding: 9px 15px !important;
+    margin-right: 5px;
+  }
+  .mobile-apy {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  .web-view {
+    margin-top: 30px;
+  }
+  .d-none-mobile {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .aramaKutusu.mobile-search {
+    padding: 0 12px 0 40px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #eee;
+  }
+  .aramaKutusu.mobile-search input {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    background: #eee;
+  }
+  .aramaKutusu.mobile-search a {
+    position: absolute;
+    left: 15px;
+  }
+
+  /** Model Bottom **/
+  .modal-bottom .MuiDialog-scrollPaper {
+    align-items: flex-end;
+  }
+  .modal-bottom .MuiDialog-paper {
+    margin: 32px auto 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .modal-bottom .completeModal {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal-bottom .completeModal .header {
+    text-align: center;
+  }
+  .modal-bottom .MuiPaper-rounded {
+    border-radius: 10px 10px 0 0;
+  }
+  .modal-bottom .loaders {
+    margin: 0 auto;
+    max-width: 312px;
+    width: 100%;
+  }
+}
+.landing-banner h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.landing-banner p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+ul.migrated li {
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+ul.migrated li span.progress {
+  width: 60%;
+  height: 6px;
+  border-radius: 20px;
+  background: #fff !important;
+  display: inline-block;
+  margin: 6px 0px 0px;
+  float: right;
+  position: relative;
+}
+ul.migrated li span.progress::before {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 85%;
+  height: 4px;
+  border-radius: 20px;
+  content: "";
+  background: #0782ff;
+}
+.enter {
+  border-radius: 0px;
+  background-image: url(../img/Enter.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  border: none !important;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fff !important;
+  line-height: 56px;
+  padding: 0px 50px 2px 0px;
+  background-size: cover;
+  width: 190px;
+}
+a.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 #000 !important;
+}
+
+/*----------------------Landing-Footer----------------------*/
+.landing-footer {
+  padding: 80px 0px 0px;
+  background: url(../img/footer-bg.jpg) no-repeat center top;
+  width: 100%;
+  background-size: cover;
+}
+.landing-footer form.news input {
+  width: 100%;
+  border: none;
+  border-radius: 3px 0px 0px 3px;
+  height: 52px;
+  padding: 0px 15px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  color: #607d8b;
+}
+.landing-footer form.news input[type="submit"] {
+  width: 30%;
+  border-radius: 0px 3px 3px 0px;
+  border-left: 2px solid #0782ff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #0782ff;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: #fff;
+}
+.landing-footer p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.landing-footer h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.protocol {
+  padding-bottom: 80px;
+}
+.protocol h3 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.protocol h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  color: #0782ff;
+}
+.protocol p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #607d8b;
+}
+.Protocol-table {
+  position: relative;
+  /*height: calc(100vh - 240px);
+	height: 406px;*/
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.Protocol-table tbody {
+  overflow-y: auto;
+  /* height: calc(100vh - 300px);
+	height: 354px;*/
+  width: 100%;
+  /*position: absolute;
+	top: 50px;*/
+  margin-top: 0;
+  padding-right: 0;
+}
+.Protocol-table thead {
+  background: #e9f2ff;
+}
+.Protocol-table tr {
+  width: 100%;
+}
+.Protocol-table tr img {
+  margin-right: 7px;
+}
+
+.Protocol-table tr th,
+.Protocol-table tr td {
+  color: #000;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 10px 5px;
+}
+tr td a {
+  color: #000;
+}
+tr td a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.Protocol-table tr td {
+  border-top: 1px solid #cfd8dc;
+}
+.Protocol-table tr .assets {
+  width: 18%;
+  padding-left: 20px;
+}
+.Protocol-table tr .market {
+  width: 11%;
+}
+.Protocol-table tr .borrowed {
+  width: 13%;
+}
+.Protocol-table tr .stable {
+  width: 20%;
+}
+.Protocol-table tr .variable {
+  width: 21%;
+}
+.Protocol-table tr .deposit {
+  width: 21%;
+}
+.Protocol-table tr .deposit-button {
+  width: 7%;
+}
+.Protocol-table tr .borrow-button {
+  width: 7%;
+  padding-right: 15px !important;
+}
+.Protocol-table tr td a {
+  background: #f4f4f7 !important;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #0782ff !important;
+  height: 24px;
+  padding: 0px 7px !important;
+  line-height: 24px;
+  border: none !important;
+}
+.Protocol-table tr th {
+  position: relative;
+}
+.Protocol-table tr th::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  right: 8px;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.Protocol-table tr th.assets::before {
+  right: 54%;
+}
+.Protocol-table tr th.borrow-button::before {
+  display: none;
+}
+.Protocol-table tr th.deposit-button::before {
+  display: none;
+}
+.protocol .container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.Protocol-table tr th.stable::before {
+  right: 10px;
+}
+.Protocol-table tr th.deposit::before {
+  right: 49%;
+}
+.Protocol-table tr th.variable::before {
+  right: 24%;
+}
+.Protocol-table tr th::before {
+  right: 13px;
+}
+.card-header ul.justify-content-end.navbar-nav {
+  flex-grow: 0;
+}
+.protocol li.nav-item a.nav-link {
+  font-size: 14px;
+  align-items: center;
+  color: #000000;
+  background: #ffffff !important;
+  border: 1px solid #b0bec5 !important;
+  border-radius: 3px;
+}
+.protocol li.nav-item .dropdown-menu {
+  margin: 0px !important;
+  top: 38px !important;
+  transform: none !important;
+  box-shadow: 0px 0px 0px #000 !important;
+  text-align: center;
+}
+.protocol li.nav-item .dropdown-menu a.nav-link {
+  border: none !important;
+  padding: 0px;
+}
+.protocol li.nav-item a.nav-link span.profiler-name {
+  padding-right: 30px;
+}
+
+.Token-table tr .assets {
+  width: 40%;
+}
+.Token-table tr .balance {
+  width: 60%;
+}
+
+.completeModal {
+  text-align: center;
+  width: 312px;
+}
+.completeModal img {
+  width: 120px;
+  padding-bottom: 20px;
+}
+.completeModal .bold-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+.completeModal p {
+  font-size: 14px;
+}
+.completeModal .header {
+  text-align: left;
+}
+.completeModal .btn {
+  margin-top: 0px !important;
+  color: white;
+}
+.cursor-hand {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.graph {
+  /* width:360px;
+	height: 360px;  */
+  width: 100%;
+  text-align: center;
+}
+.graphImg {
+  margin-top: -390px;
+  margin-left: 20px;
+  /* width: 100px; */
+}
+.iconImg {
+  width: 28px;
+}
+.blue-link {
+  color: #0782ff;
+}
+.inline-block {
+  display: inline-block;
+}
+.voting-executed-button-left {
+  width: 40%;
+  padding-right: 67px;
+}
+.voting-executed-button-right {
+  width: 60%;
+  padding-left: 67px;
+}
+.disable-button {
+  background-color: #cfd8dc !important;
+}
+.modal li {
+  width: 100% !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+}
+.detailed-text {
+  color: #607d8b;
+}
+.address-list li {
+  border-bottom: 1px solid #cfd8dc !important;
+  padding: 0.8rem 1.2rem !important;
+}
+
+.claim-btns a {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+.sidebar-drawer,
+.sidebar-drawer-button {
+  display: none;
+}
+
+.sidebar-container {
+  display: block;
+}
+
+.sidebar-drawer-logo {
+  z-index: 100;
+  padding: 8px 65px 8px 25px;
+  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) !important; */
+}
+
+/********responsive start***********/
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (max-width: 767px) {
+  #wrapper #content-wrapper,
+  .navbar-nav.sidebar {
+    margin: 0;
+  }
+  #wrapper #content-wrapper {
+    padding-top: 100px;
+  }
+  .navbar-nav.sidebar {
+    padding-top: 75px;
+  }
+  .sidebar-drawer,
+  .sidebar-drawer-button {
+    display: block;
+  }
+  .sidebar-container {
+    display: none;
+  }
+  .logoexpand {
+    margin: auto;
+  }
+
+  .stake-rewards .btn {
+    height: 40px;
+  }
+
+  .stake-rewards ul a.btn {
+    line-height: 40px;
+  }
+  .mobile-left-align {
+    flex-direction: initial;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+  .dropdown-mobile-set.card-header ul {
+    background-color: transparent;
+  }
+  .dropdown-mobile-set.card-header ul.Proposals li a {
+    color: #0782ff !important;
+  }
+  .deposit-details.Proposals .dropdown-mobile-set {
+    border-bottom: none;
+    padding: 1rem 1rem 60px 1rem !important;
+    align-items: center;
+  }
+  .mobile-dropdown {
+    width: 100%;
+    border: 1px solid #b0bec5;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    width: 94%;
+    bottom: 5px;
+  }
+  .dropdown-mobile-set.card-header ul.Proposals li a.dropdown-toggle {
+    text-align: left;
+    padding-left: 15px !important;
+    color: #000 !important;
+  }
+  .dropdown-mobile-set.card-header ul.Proposals li a.dropdown-toggle::after {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    color: #000 !important;
+  }
+  .dropdown-mobile-set ul li ul {
+    margin: 0 !important;
+  }
+  .dropdown-mobile-set ul li .dropdown-menu {
+    width: 100%;
+    left: 0;
+    top: 110%;
+  }
+  .voting-balance {
+    background: transparent !important;
+    justify-content: space-between !important;
+    width: 100%;
+  }
+  .voting-balance li:last-child {
+    text-align: right;
+  }
+  .voting-executed-button-left,
+  .voting-executed-button-right {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  .deposit-details ul a.btn.Addresses {
+    padding: 11px 0 !important;
+    display: block;
+    line-height: normal;
+    height: 40px;
+  }
+  .deposit-details .card.proposals-area {
+    height: auto;
+    padding-bottom: 30px;
+    overflow-y: inherit !important;
+  }
+  .mobile-head-color {
+    background-color: #e9f2ff;
+  }
+}
+@media screen and (max-width: 420px) {
+}
